@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialista em Direito Previdenciário | Conquiste Seu Benefício</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS (Para animações de rolagem) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1E3A8A', // Azul escuro confiável
+                            light: '#EFF6FF', // Fundo claro
+                            accent: '#F59E0B', // Dourado/Laranja para botões de destaque
+                            accentHover: '#D97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Suaviza o scroll da página */
+        html { scroll-behavior: smooth; }
+        /* Sombras personalizadas para cards */
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-brand-blue font-bold text-xl md:text-2xl flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>Tarciso de Jesus Oliveira</span>
+                    </div>
+                </div>
+                <!-- CTA Navbar -->
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/5518981684383" target="_blank" class="bg-brand-blue hover:bg-blue-800 text-white px-6 py-2 rounded-full font-semibold transition duration-300 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Falar com Especialista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-brand-blue text-white py-20 lg:py-28 relative overflow-hidden">
+        <!-- Padrão de fundo opcional -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center">
+            <!-- Text Content -->
+            <div class="md:w-3/5 md:pr-10 text-center md:text-left mb-10 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-800 text-sm font-semibold mb-6 tracking-wider uppercase">Especialistas em INSS</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Conquiste o Benefício que Você Merece Sem Dor de Cabeça.
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl">
+                    Seu pedido foi negado ou está demorando demais? Nossa equipe cuida de toda a burocracia para garantir sua aposentadoria ou auxílio com agilidade e segurança.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/5518981684383" target="_blank" class="bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 flex items-center justify-center gap-3 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Analisar Meu Caso Grátis
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Image -->
+            <div class="md:w-2/5 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="relative">
+                    <!-- Decorativo atrás da imagem -->
+                    <div class="absolute -inset-4 bg-brand-accent rounded-full opacity-20 blur-2xl"></div>
+                    <!-- Imagem placeholder -->
+                    <img src="https://placehold.co/500x600/1E40AF/FFFFFF?text=Foto+do\nDr.+Tarciso" alt="Dr. Tarciso Especialista" class="relative rounded-2xl shadow-2xl object-cover w-full max-w-md border-4 border-white/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dores/Identificação -->
+    <section class="py-20 bg-white" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10">Você está passando por alguma destas situações?</h2>
+            
+            <div class="grid sm:grid-cols-2 gap-6 text-left">
+                <div class="bg-brand-light p-6 rounded-xl border border-blue-100 flex gap-4 items-start card-hover">
+                    <div class="bg-red-100 text-red-600 p-2 rounded-full mt-1 shrink-0">
+                        <i class="fa-solid fa-xmark w-5 h-5 flex items-center justify-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-2">Pedido Negado</h3>
+                        <p class="text-gray-600">Teve a sua aposentadoria ou auxílio-doença negado injustamente pelo INSS.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-brand-light p-6 rounded-xl border border-blue-100 flex gap-4 items-start card-hover">
+                    <div class="bg-orange-100 text-orange-600 p-2 rounded-full mt-1 shrink-0">
+                        <i class="fa-regular fa-clock w-5 h-5 flex items-center justify-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-2">Demora Extrema</h3>
+                        <p class="text-gray-600">Deu entrada no benefício há meses e o INSS não dá nenhuma resposta.</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-light p-6 rounded-xl border border-blue-100 flex gap-4 items-start card-hover">
+                    <div class="bg-blue-100 text-brand-blue p-2 rounded-full mt-1 shrink-0">
+                        <i class="fa-solid fa-user-shield w-5 h-5 flex items-center justify-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-2">Trabalho Insalubre</h3>
+                        <p class="text-gray-600">Trabalhou em condições perigosas e quer adiantar a aposentadoria especial.</p>
+                    </div>
+                </div>
+
+                <div class="bg-brand-light p-6 rounded-xl border border-blue-100 flex gap-4 items-start card-hover">
+                    <div class="bg-blue-100 text-brand-blue p-2 rounded-full mt-1 shrink-0">
+                        <i class="fa-solid fa-question w-5 h-5 flex items-center justify-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-2">Dúvidas sobre o Tempo</h3>
+                        <p class="text-gray-600">Não sabe se já atingiu o tempo de contribuição ou a idade para parar de trabalhar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-blue-50 border-l-4 border-brand-blue p-6 rounded-r-lg text-left">
+                <p class="text-lg text-gray-800">
+                    <span class="font-bold">A boa notícia:</span> Se você se identificou com qualquer uma dessas situações, a ajuda de um advogado especialista é o caminho mais rápido para reverter o caso e garantir seus direitos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Podemos Proteger Seus Direitos</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Atuamos de forma estratégica para garantir o melhor benefício possível para você e sua família.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Aposentadorias</h3>
+                    <p class="text-gray-600">Por idade, tempo de contribuição, especial ou rural. Calculamos o melhor cenário para você receber o teto máximo possível.</p>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Benefícios Negados ou Suspensos</h3>
+                    <p class="text-gray-600">Revertemos decisões injustas do INSS na Justiça. Não aceite o "Não" do INSS como resposta final.</p>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Auxílio-Doença e Invalidez</h3>
+                    <p class="text-gray-600">Trabalharemos para concessão ou restabelecimento do seu beneficio, enquanto você foca no que realmente importa: a sua recuperação.</p>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">BPC / LOAS</h3>
+                    <p class="text-gray-600">Assessoria completa para idosos ou pessoas com deficiência de baixa renda que precisam de um salário mínimo mensal.</p>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Planejamento Previdenciário</h3>
+                    <p class="text-gray-600">Descubra exatamente quando você vai se aposentar e com qual valor. O mapa completo para o seu futuro.</p>
+                </div>
+
+                <!-- CTA dentro do grid -->
+                <div class="bg-brand-blue p-8 rounded-2xl shadow-sm text-white flex flex-col justify-center items-center text-center card-hover" data-aos="zoom-in" data-aos-delay="600">
+                    <h3 class="text-xl font-bold mb-4">Precisa de ajuda com um destes casos?</h3>
+                    <a href="#contato" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white py-3 px-4 rounded-lg font-bold transition duration-300">
+                        Falar com Advogado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passo a Passo -->
+    <section class="py-20 bg-white" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Podemos Proteger Seus Direitos</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Atuamos de forma estratégica para garantir o melhor benefício possível para você e sua família.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Aposentadorias</h3>
+                    <p class="text-gray-600">Idade, tempo de contribuição, especial ou rural. Calculamos o cenário ideal para você receber o teto máximo.</p>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Benefícios Negados</h3>
+                    <p class="text-gray-600">Revertemos decisões injustas do INSS na Justiça. Não aceite o "Não" do perito como resposta final.</p>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Auxílio-Doença</h3>
+                    <p class="text-gray-600">Garantimos o seu sustento enquanto você foca no que realmente importa: a sua recuperação da saúde.</p>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">BPC / LOAS</h3>
+                    <p class="text-gray-600">Assessoria completa para idosos (+65 anos) ou pessoas com deficiência que precisam de suporte financeiro.</p>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Planejamento Previdenciário</h3>
+                    <p class="text-gray-600">Descubra exatamente quando você vai se aposentar e com qual valor. O mapa completo para o seu futuro.</p>
+                </div>
+
+                <!-- CTA dentro do grid -->
+                <div class="bg-brand-blue p-8 rounded-2xl shadow-sm text-white flex flex-col justify-center items-center text-center card-hover">
+                    <h3 class="text-xl font-bold mb-4">Precisa de ajuda com um destes casos?</h3>
+                    <a href="#contato" class="w-full bg-brand-accent hover:bg-brand-accentHover text-white py-3 px-4 rounded-lg font-bold transition duration-300">
+                        Falar com Advogado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passo a Passo -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Seu Benefício em 3 Passos Simples</h2>
+                <p class="text-lg text-gray-600">Processo transparente e sem complicação.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 relative">
+                <!-- Linha conectora (visível apenas em telas grandes) -->
+                <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-1 bg-blue-100 z-0"></div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-brand-blue text-brand-blue rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-md">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Contato Inicial</h3>
+                    <p class="text-gray-600">Você clica no botão do WhatsApp e nossa equipe atende você prontamente.</p>
+                </div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-brand-blue text-brand-blue rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-md">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Análise do Caso</h3>
+                    <p class="text-gray-600">Avaliamos sua documentação e histórico no INSS de forma rápida e transparente.</p>
+                </div>
+
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 mx-auto bg-brand-blue border-4 border-brand-blue text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg shadow-blue-500/30">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Ação Imediata</h3>
+                    <p class="text-gray-600">Entramos com o pedido administrativo ou judicial e você acompanha tudo de casa.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#contato" class="inline-flex bg-brand-blue hover:bg-blue-800 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 items-center justify-center gap-3 shadow-lg">
+                    Quero Dar o Primeiro Passo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoridade -->
+    <section class="py-20 bg-brand-light" data-aos="fade-up" data-aos-duration="1000">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2" data-aos="fade-right" data-aos-delay="200">
+                <img src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=Foto+do+Dr.+Tarciso" alt="Dr. Tarciso de Jesus Oliveira" class="rounded-2xl shadow-xl w-full">
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="400">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Quem vai cuidar do seu futuro?</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    <strong>Tarciso de Jesus Oliveira</strong> é referência em Direito Previdenciário. Com mais de 8 anos de experiência e centenas de benefícios concedidos, nossa missão é enfrentar a burocracia do sistema para que trabalhadores e idosos tenham seus direitos respeitados.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3 text-gray-700 font-semibold">
+                        <i class="fa-solid fa-heart text-brand-blue"></i> Atendimento humanizado e focado em resultados.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700">
+                        <i class="fa-solid fa-check text-brand-blue"></i> Especialista exclusivo em causas do INSS.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700">
+                        <i class="fa-solid fa-check text-brand-blue"></i> Transparência total em cada etapa do processo.
+                    </li>
+                </ul>
+                <div class="text-sm text-gray-500 font-semibold border-t border-gray-300 pt-4">
+                    OAB/SP n. 410.039
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Dúvidas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Pergunta 1 -->
+                <details class="group bg-gray-50 rounded-lg p-6 border border-gray-200 cursor-pointer">
+                    <summary class="font-bold text-lg text-gray-900 flex justify-between items-center">
+                        Vocês atendem pessoas de outras cidades/estados?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-blue"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed">
+                        Sim! Nosso atendimento é 100% digital e seguro. Atendemos clientes de todo o Brasil, utilizando a tecnologia para analisar documentos e fazer reuniões sem que você precise sair de casa.
+                    </div>
+                </details>
+
+                <!-- Pergunta 2 -->
+                <details class="group bg-gray-50 rounded-lg p-6 border border-gray-200 cursor-pointer">
+                    <summary class="font-bold text-lg text-gray-900 flex justify-between items-center">
+                        Quanto custa para analisar o meu caso?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-blue"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed">
+                        A primeira avaliação do seu caso, onde entendemos a sua situação e a viabilidade do benefício, não tem custo. Você só paga honorários se decidirmos fechar uma parceria e prosseguir com a ação.
+                    </div>
+                </details>
+
+                <!-- Pergunta 3 -->
+                <details class="group bg-gray-50 rounded-lg p-6 border border-gray-200 cursor-pointer">
+                    <summary class="font-bold text-lg text-gray-900 flex justify-between items-center">
+                        Quanto tempo demora o processo contra o INSS?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-blue"></i>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 mt-4 leading-relaxed">
+                        O tempo varia dependendo de cada caso e da agilidade do próprio INSS ou da Justiça. No entanto, com um advogado especialista acompanhando de perto, evitamos erros comuns que costumam atrasar o processo em anos, garantindo a maior rapidez possível.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section id="contato" class="bg-brand-blue text-white py-16 text-center" data-aos="zoom-in" data-aos-duration="800">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Não deixe seu direito para depois.</h2>
+            <p class="text-xl text-blue-100 mb-8">Clique no botão abaixo e fale agora mesmo com um de nossos especialistas pelo WhatsApp.</p>
+            <a href="https://wa.me/5518981684383" target="_blank" class="inline-flex bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-full font-bold text-xl transition duration-300 items-center justify-center gap-3 shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transform hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-3xl"></i> Falar com Especialista Agora
+            </a>
+            <p class="text-sm text-blue-200 mt-6"><i class="fa-solid fa-lock"></i> Suas informações são confidenciais e protegidas.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-white font-bold text-xl mb-4 flex items-center justify-center md:justify-start gap-2">
+                    <i class="fa-solid fa-scale-balanced"></i> Tarciso de Jesus Oliveira
+                </div>
+                <p class="text-sm">Defendendo o seu direito previdenciário com excelência, atendimento humanizado e foco em resultados.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contato</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fa-brands fa-whatsapp w-5 text-green-400"></i> <a href="https://wa.me/5518981684383" target="_blank" class="hover:text-white transition">(18) 98168-4383</a></li>
+                    <li><i class="fa-solid fa-phone w-5"></i> <a href="tel:+5518981684383" class="hover:text-white transition">(18) 98168-4383</a></li>
+                    <li><i class="fa-solid fa-envelope w-5"></i> <a href="mailto:tarcisio2026@adv.oabsp.org.br" class="hover:text-white transition">tarcisio2026@adv.oabsp.org.br</a></li>
+                    <li><i class="fa-brands fa-instagram w-5 text-pink-500"></i> <a href="https://www.instagram.com/dr.tarcisiodejesus/" target="_blank" class="hover:text-white transition">@dr.tarcisiodejesus</a></li>
+                    <li><i class="fa-solid fa-location-dot w-5"></i> Rua Domingos Jorge Velho, 211</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Aviso Legal</h4>
+                <p class="text-xs leading-relaxed text-gray-500">
+                    Este site possui caráter informativo. O exercício da advocacia é pautado pelo Estatuto da OAB. A contratação de serviços jurídicos deve ser feita de forma consciente. Resultados dependem de análises judiciais de cada caso específico.
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+            &copy; 2026 Tarciso de Jesus Oliveira. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5518981684383" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts de Animação (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa as animações de rolagem
+        AOS.init({
+            once: true,       // A animação acontece apenas uma vez ao rolar para baixo
+            offset: 100,      // Deslocamento de 100px antes de acionar a animação
+            duration: 800,    // Duração padrão das animações
+            easing: 'ease-out-cubic', // Curva de suavização
+        });
+    </script>
+</body>
+</html>
