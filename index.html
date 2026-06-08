@@ -5,6 +5,22 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-18204460236/PX8lCLDNpbscEMyJyOhD'});
 </script>
+<!-- Event snippet for Visualização de página (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18204460236/PX8lCLDNpbscEMyJyOhD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18204460236"></script>
